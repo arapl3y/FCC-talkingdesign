@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'Monaco', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    background: #78C68E;
+}
+
+.loader i {
+	color: #5D9A71;
+}
+
+@-webkit-keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.animate-bottom {
+	position: relative;
+	-webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#quoteDiv {
+	display: none;
+}
+
+.container-fluid {
+    width: 80%;
+    max-width: 768px;
+    margin: 30px auto;
+}
+
+.jumbotron {
+    margin: 30px auto;
+    text-align: center;
+    padding: 30px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h1 {
+    font-size: 2.4em;
+    color: #5D9A71;
+    padding-bottom: 20px;
+}
+
+.blockquote {
+	overflow: hidden;
+}
+
+.blockquote p {
+    color: #5D9A71;
+    font-size: 1.2em;
+		font-family: 'Inconsolata', sans-serif;
+}
+
+.blockquote footer {
+    color: #5D9A71;
+    font-size: 1em;
+		font-family: 'Monaco', sans-serif;
+}
+
+.buttons .btn {
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+    border-color: #5D9A71;
+    color: #5D9A71;
+}
+
+.btn:hover {
+    background: #5D9A71;
+    color: white;
+    border-color: white;
+}
+
+.btn:focus {
+    outline: 0;
+    background: transparent;
+    border-color: #5D9A71;
+    color: #5D9A71;
+}
+
+.buttons .share-btn {
+    display: block;
+    margin: 10px auto 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: none;
+    font-size: 2em;
+    color: #5D9A71;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.share-btn:hover {
+    color: #5D9A71;
+    opacity: 0.7;
+}
+
+.share-btn:focus {
+    outline: 0;
+}
