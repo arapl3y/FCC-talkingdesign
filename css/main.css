@@ -15,39 +15,59 @@ body {
 }
 
 .loader i {
-	color: #5D9A71;
+    color: #5D9A71;
 }
 
 @-webkit-keyframes spin {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .animate-bottom {
-	position: relative;
-	-webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
 }
 
 @keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 #quoteDiv {
-	display: none;
+    display: none;
 }
 
 .container-fluid {
@@ -71,19 +91,19 @@ body {
 }
 
 .blockquote {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .blockquote p {
     color: #5D9A71;
     font-size: 1.2em;
-		font-family: 'Inconsolata', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
 }
 
 .blockquote footer {
     color: #5D9A71;
     font-size: 1em;
-		font-family: 'Monaco', sans-serif;
+    font-family: 'Monaco', sans-serif;
 }
 
 .buttons .btn {

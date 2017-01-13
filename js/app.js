@@ -7,15 +7,13 @@ app.init = function() {
   app.nextQuote();
 };
 
-
-
 app.loader = function() {
-	setTimeout(app.showPage, 2000);
+  setTimeout(app.showPage, 2000);
 };
 
 app.showPage = function() {
-	$('.loader').css('display', 'none');
-	$('#quoteDiv').css('display', 'block');
+  $('.loader').css('display', 'none');
+  $('#quoteDiv').css('display', 'block');
 };
 
 app.getQuote = function() {
@@ -38,7 +36,6 @@ app.nextQuote = function() {
   $('#nextQuote').on('click', app.getQuote);
 };
 
-//Twitter API
 $("#tweet").on("click", function() {
   window.open("//twitter.com/intent/tweet?text=" + app.postContent + " - " + app.postAuthor);
 });
