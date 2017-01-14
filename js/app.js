@@ -40,4 +40,4 @@ $("#tweet").on("click", function() {
   window.open("//twitter.com/intent/tweet?text=" + app.postContent + " - " + app.postAuthor);
 });
 
-app.init();
+$(document).ready(app.init);

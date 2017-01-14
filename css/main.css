@@ -5,6 +5,10 @@
     vertical-align: baseline;
 }
 
+html {
+	height: 100%;
+}
+
 body {
     font-family: 'Monaco', sans-serif;
     margin: 0;
@@ -16,24 +20,6 @@ body {
 
 .loader i {
     color: #5D9A71;
-}
-
-@-webkit-keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 .animate-bottom {
@@ -106,29 +92,30 @@ body {
     font-family: 'Monaco', sans-serif;
 }
 
-.buttons .btn {
+.buttons .next-btn {
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
     background: transparent;
     border-color: #5D9A71;
     color: #5D9A71;
 }
 
-.btn:hover {
+.buttons .next-btn:hover {
     background: #5D9A71;
     color: white;
     border-color: white;
 }
 
-.btn:focus {
+.buttons .next-btn:focus {
     outline: 0;
     background: transparent;
     border-color: #5D9A71;
     color: #5D9A71;
 }
 
-.buttons .share-btn {
-    display: block;
+.buttons .share-btn,
+.buttons .home-btn {
+    display: inline;
     margin: 10px auto 0;
     width: 32px;
     height: 32px;
@@ -140,11 +127,14 @@ body {
     cursor: pointer;
 }
 
-.share-btn:hover {
+.buttons .share-btn:hover,
+.buttons .home-btn:hover {
     color: #5D9A71;
     opacity: 0.7;
+		text-decoration: none;
 }
 
-.share-btn:focus {
+.buttons .share-btn:focus,
+.buttons .home-btn:focus {
     outline: 0;
 }
